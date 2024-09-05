@@ -1,0 +1,91 @@
+/* AccountManagement.module.css */
+
+/* General Styles */
+.accountManagement {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff; /* White background for contrast */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.accountManagement h1 {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.accountManagement h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.error {
+  color: #dc3545; /* Red for errors */
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between form elements */
+}
+
+.label {
+  font-weight: 500;
+  color: #555;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: calc(100% - 22px); /* Full width minus padding */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.input:focus {
+  border-color: #007bff; /* Blue color on focus */
+  outline: none;
+}
+
+/* Update and Change Password Button */
+.submitButton {
+  padding: 10px 20px; /* Adjust padding for a more compact look */
+  background-color: #007bff; /* Blue background for buttons */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em; /* Slightly smaller font size */
+  font-weight: bold;
+  max-width: 200px; /* Limit the maximum width */
+  margin: 10px auto; /* Center the button */
+  display: block; /* Ensure the button is a block element */
+}
+
+.submitButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.togglePassword {
+  background: none;
+  border: none;
+  color: #007bff; /* Blue color for toggle button */
+  cursor: pointer;
+  font-size: 14px;
+  text-align: right;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  transition: color 0.3s ease; /* Smooth transition for hover */
+}
+
+.togglePassword:hover {
+  color: #0056b3; /* Darker blue on hover */
+}

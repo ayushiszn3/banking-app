@@ -1,0 +1,90 @@
+.transferFunds {
+    background-color: #fff; /* White background for consistency with the dashboard */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Similar box shadow as the dashboard */
+    max-width: 1000px; /* Adjust width as needed */
+    margin: 30px auto; /* Center align and margin similar to dashboard */
+  }
+  
+  .heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333; /* Dark text for consistency */
+    text-align: center; /* Centered heading */
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #333; /* Dark text for labels */
+  }
+  
+  input[type="number"],
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    color: #333;
+    font-size: 1rem;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="number"]:focus,
+  input[type="text"]:focus {
+    outline: none;
+    border: 2px solid #007bff; /* Consistent with icon color */
+  }
+  
+  .buttonContainer {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center align buttons */
+    margin-top: 20px;
+  }
+  
+  .creditButton,
+  .debitButton {
+    padding: 10px;
+    width: 50%; /* Reduced button width */
+    max-width: 200px; /* Max width for consistency */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px; /* Space between buttons */
+  }
+  
+  .creditButton {
+    background-color: #28a745; /* Green for credit */
+  }
+  
+  .creditButton:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  .creditButton:active {
+    background-color: #1e7e34; /* Even darker green when clicked */
+  }
+  
+  .debitButton {
+    background-color: #dc3545; /* Red for debit */
+  }
+  
+  .debitButton:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }
+  
+  .debitButton:active {
+    background-color: #bd2130; /* Even darker red when clicked */
+  }

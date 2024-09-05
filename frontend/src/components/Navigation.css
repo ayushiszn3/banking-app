@@ -1,0 +1,57 @@
+/* Navigation.css */
+.navigation {
+    background-color: #ffffff; /* White background for the navigation bar */
+    border-bottom: 1px solid #353896; /* Light border for a subtle separation */
+    padding: 10px 20px; /* Slightly larger padding for better spacing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for a floating effect */
+  }
+  
+  .navigation-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+  }
+  
+  .navigation-item {
+    margin: 0 15px; /* Adjusted spacing between items for better alignment */
+  }
+  
+  .navigation-link {
+    text-decoration: none;
+    color: #007bff; /* Primary color for the links */
+    font-size: 18px; /* Adjusted font size for readability */
+    font-weight: 500; /* Normal font weight for a cleaner look */
+    padding: 10px 20px; /* Comfortable padding for click area */
+    border-radius: 8px; /* Rounded corners for a modern look */
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+  }
+  
+  .navigation-link:hover {
+    background-color: #e9f1ff; /* Light background color on hover */
+    color: #0056b3; /* Darker color on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+  }
+  
+  .navigation-link.active {
+    background-color: #007bff; /* Primary color for the active link */
+    color: #ffffff; /* White text color for active link */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Slight shadow for emphasis */
+  }
+  
+  @media (max-width: 768px) {
+    .navigation {
+        padding: 10px 15px; /* Adjusted padding for smaller screens */
+    }
+  
+    .navigation-list {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items horizontally */
+    }
+  
+    .navigation-item {
+        margin: 8px 0; /* Adjust spacing for vertical layout */
+    }
+  }
+  

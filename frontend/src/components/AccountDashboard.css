@@ -1,0 +1,194 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #71e781; /* Light green background */
+    margin: 0;
+    padding: 0;
+}
+  
+h1, h2, h3 {
+    color: #333;
+    margin: 0;
+}
+  
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+  
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    text-align: center;
+}
+  
+h3 {
+    font-size: 1.4em;
+}
+  
+/* Dashboard Container */
+.account-dashboard {
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px; /* Enlarged width of the container */
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+/* Account Info */
+.account-info {
+    margin-bottom: 20px;
+}
+  
+.account-info p {
+    margin: 0;
+    color: #777;
+}
+  
+/* Account Holder */
+.account-holder {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+  
+.account-holder .icon {
+    font-size: 2.5em;
+    color: #007bff;
+    margin-right: 15px;
+}
+  
+.account-holder p {
+    margin: 0;
+    color: #777;
+}
+  
+.account-holder h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #333;
+}
+  
+/* Account Details */
+.account-details {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+  
+.account-detail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+  
+.account-detail .icon {
+    font-size: 2em;
+    color: #007bff;
+    margin-right: 15px;
+}
+  
+.account-detail p {
+    margin: 0;
+    color: #777;
+}
+  
+.account-detail h3 {
+    margin: 0;
+    font-size: 1.4em;
+    color: #333;
+}
+  
+/* Balance */
+.balance {
+    color: #28a745;
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+  
+/* Toggle Button */
+.toggle-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+  
+.toggle-button:hover {
+    background-color: #0056b3;
+}
+  
+/* Transactions */
+.transactions {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align the transaction list */
+    margin-top: 20px;
+}
+  
+.transactions ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 800px; /* Optional: limit the width of the transactions list */
+}
+  
+.transaction-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fff;
+    width: 100%; /* Full width for each item */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+  
+.transaction-item:last-child {
+    border-bottom: none;
+}
+  
+.transaction-item span {
+    flex: 1;
+    font-size: 1em;
+    color: #333;
+    text-align: left; /* Align text to the left */
+}
+  
+.transaction-item .amount {
+    text-align: right;
+    font-weight: bold;
+}
+  
+.transaction-item .amount.credit {
+    color: #28a745; /* Green for credit */
+}
+  
+.transaction-item .amount.debit {
+    color: #dc3545; /* Red for debit */
+}
+  
+.transaction-item:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+  
+/* Hover Effects */
+.account-detail:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    transition: transform 0.3s; /* Smooth transition effect */
+}

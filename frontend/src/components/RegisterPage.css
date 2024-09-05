@@ -1,0 +1,77 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #2a418a 0%, #1a2a60 100%); /* Consistent background gradient */
+}
+
+.register-form {
+  background-color: #fff; /* White background for the form */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  max-width: 400px;
+  width: 100%;
+  margin: 0 20px; /* Margin for better spacing on smaller screens */
+}
+
+.register-form h1 {
+  margin-bottom: 20px;
+  font-size: 2.5em; /* Larger font size for prominence */
+  color: #333; /* Dark color for contrast */
+  text-align: center;
+}
+
+.register-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500; /* Bold labels */
+  color: #333; /* Dark text color */
+}
+
+.register-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 5px; /* Rounded corners for inputs */
+  background-color: #f9f9f9; /* Light background for inputs */
+}
+
+.register-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff; /* Primary button color */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 5px; /* Rounded corners for button */
+  font-size: 1.2em; /* Larger font size for buttons */
+  font-weight: 600; /* Bold text */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+}
+
+.register-form button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.register-form .error-message {
+  color: red; /* Error message color */
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1em; /* Standard font size */
+}
+
+.register-form .login-link {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+  color: #007bff; /* Matching link color */
+  font-size: 1.1em; /* Slightly larger font size for readability */
+}
+
+.register-form .login-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}

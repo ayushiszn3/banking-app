@@ -1,0 +1,67 @@
+/* HomePage.css */
+
+/* Resetting all default margins, paddings, and setting box-sizing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #2a418a 0%, #1a2a60 100%);
+  color: #333;
+  text-align: center;
+  padding: 0; /* Reduced padding */
+  margin: 0;
+}
+
+.home-page .logo {
+  margin: 0; /* Removed all margins */
+  padding: 0; /* Ensure no extra padding */
+}
+
+.home-page .logo img {
+  max-width: 400px;
+  height: auto;
+  display: block; /* Ensures no extra space around the image */
+}
+
+.home-page h1 {
+  font-size: 3em;
+  color: #ffffff;
+  margin: 0; /* Remove all margins */
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  line-height: 1.2;
+}
+
+.home-page-links {
+  margin-top: 20px;
+}
+
+.home-page-link {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.home-page-link:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.home-page-link:active {
+  transform: scale(0.95);
+}
